@@ -33,7 +33,7 @@ h1 > span {
   position: absolute;
   color: white;
 
-  height: 100vh;
+  height: 95vh;
   width: 100%;
 
   display: flex;
@@ -221,4 +221,20 @@ h1 > span {
   50% {margin-left: 0;}
   75% {margin-left: -7px;}
   100% {margin-left: 0;}
+}
+
+
+footer {
+  font-size:32px;
+  height: 5vh;
+  color: white;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Italianno', cursive;
 }
