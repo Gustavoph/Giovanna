@@ -139,13 +139,11 @@ h1 > span {
   font-family: 'Rampart One', cursive;
 }
 
-.btn:hover {
-  animation: tremer .2s;
-  animation-iteration-count: 4;
-}
+.playlist { background: #29c45c; }
 
-.playlist {
-  background: #29c45c;
+.playlist:hover {
+  animation: tremerspotify .2s;
+  animation-iteration-count: 4;
 }
 
 .playlist a {
@@ -154,9 +152,19 @@ h1 > span {
   font-family: 'Rampart One', cursive;
 }
 
-#close-carta {
+#open-carta {
   background: #bf433b;
   color: white;
+}
+
+#open-carta:hover {
+  animation: tremercarta .2s;
+  animation-iteration-count: 4;
+}
+
+#open-gallery:hover {
+  animation: tremerfoto .2s;
+  animation-iteration-count: 4;
 }
 
 #close-gallery {
@@ -174,11 +182,40 @@ h1 > span {
   transform: scale(1.4);
   right: 30px;
   top: 8px;
-  animation: tremer .2s;
-  animation-iteration-count: 4;
 }
 
-@keyframes tremer {
+#close-carta {
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  background: transparent;
+  border: none;
+  right: 10px;
+  top: 2px;
+  transition: transform .3s;
+}
+
+#close-carta:hover {
+  transform: scale(1.2);
+}
+
+@keyframes tremerfoto {
+  0% {margin-left: 0;}
+  25% {margin-left: 7px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -7px;}
+  100% {margin-left: 0;}
+}
+
+@keyframes tremercarta {
+  0% {margin-left: 0;}
+  25% {margin-left: 7px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -7px;}
+  100% {margin-left: 0;}
+}
+
+@keyframes tremerspotify {
   0% {margin-left: 0;}
   25% {margin-left: 7px;}
   50% {margin-left: 0;}
